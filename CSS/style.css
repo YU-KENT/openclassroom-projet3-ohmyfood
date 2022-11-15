@@ -342,7 +342,7 @@ body {
 .menu-card_title .heart {
   position: absolute;
   top: 25px;
-  right: 11%;
+  right: 10%;
 }
 .menu-card .menu {
   display: flex;
@@ -512,7 +512,7 @@ footer ul a i {
     margin-left: 10px;
     margin-top: -7px;
   }
-  /*menu1-4*/
+  /*page 1-4*/
   .arrow {
     position: relative;
     top: 2%;
@@ -660,7 +660,7 @@ footer ul a i {
   .heart:hover > .heart_solid {
     transform: scaley(1);
   }
-  /*menu1-4*/
+  /*page 1-4*/
   .arrow {
     position: relative;
     top: 2%;
