@@ -279,7 +279,6 @@ justify-content: center;
       overflow: hidden;
       background-color: white;
       position: relative;
-      box-shadow:$box-shadow_s;
       &_img{
         width:100%;
         height: 170px;
@@ -292,6 +291,7 @@ justify-content: center;
       a{
           text-decoration: none;
           color:black;
+
       }
       .nouveau
       {   text-align: center;
