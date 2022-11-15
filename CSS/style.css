@@ -629,6 +629,7 @@ footer ul a i {
     overflow: hidden;
     background-color: white;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(41, 41, 41, 0.2);
   }
   .card-res_img {
     width: 100%;
