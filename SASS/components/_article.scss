@@ -1,0 +1,40 @@
+
+
+    .menu-card{
+        width: 100%;
+        position: relative;
+        top: -35px;
+        background: white;
+        border-radius: $border-rad-l $border-rad-l 0 0;
+        
+           &_title{
+            padding-top: 1px;
+             span{
+                font-family: 'shrikhandregular';
+                font-size: 22px;
+                margin:20px;
+                display: block;
+             }
+            .heart{
+                position: absolute;
+                top: 25px;
+                right: 11%;
+            }
+            }
+
+            
+        .menu{
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 20px;
+              
+       .border-mint{
+                  width: 35px;
+                  height: 22px;
+                  border-bottom: 3px solid $color-mint;
+                  margin-left: 20px;
+                  margin-bottom: 0;
+                  }
+                }
+         
+             } 

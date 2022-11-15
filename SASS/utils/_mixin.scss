@@ -1,0 +1,22 @@
+
+    
+@mixin btn($width,$height,$color:black,$bg:$color-primary,$border-rad)
+{
+width:$width;
+height:$height;
+background-color: $bg;
+color:$color;
+border:0;
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s ease-in-out;
+font-size:$size-txt-btn;
+border-radius: $border-rad;
+justify-content: center;
+cursor:pointer;
+}
+
+@mixin heart{
+    position: absolute;
+    top:80%;
+    right:5%;
+    font-size: 22px;}

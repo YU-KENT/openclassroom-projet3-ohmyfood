@@ -1,0 +1,175 @@
+  .btn-fonction
+   {
+    @include btn($width:88%,$height:67px,$bg:$color-greyclair,$border-rad:$border-rad-m);
+    margin-top: 25px;
+    position: relative;
+    transition:background-color 300ms ease-in-out;
+    .icons-fonction{
+        position:absolute;
+        left:14%;
+        color:$color-greydark;
+        font-size: 15px;
+    }
+     span{
+        font-weight: 600;
+     }
+     .icons-number{
+        width: 20px;
+        height: 20px;
+        background-color: #9356DC;
+        color: white;
+        position: absolute;
+        left: -4%;
+        border-radius: 10px;
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:color 300ms ease-in-out;
+     }
+     &:hover {
+        background-color:lighten($color-primary,35%);
+        box-shadow: 0 8px 16px 0 rgba(41, 41, 41, 0.2);
+        .icons-fonction{
+            color:$color-primary;
+        }
+      }
+    }
+
+
+.btn-rose
+ { 
+   @include btn($width:60%,$height:50px,$color:white,$bg:$color-primary,$border-rad:$border-rad-l);
+   margin-top: 25px;
+   margin-bottom: 35px;
+   background-image:linear-gradient(to top,$color-primary,$color-secondary);
+   transition:background-image 300ms ease-in;
+      &:hover{
+        
+          background-image:linear-gradient(to bottom, $color-primary,$color-secondary);
+          box-shadow: $btn-shadow_s;      
+       }
+    }
+
+
+.menu_btn{
+    @include btn($width:92%,$height:67px,$bg:white,$border-rad:$border-rad-m);
+    margin:4%;
+    margin-bottom: 0;
+    position: relative;
+    a{
+      text-decoration: none;
+      color: black;
+      text-align:left;
+    }
+    .ellipsis_h3{
+      display:block; 
+      width: 80%;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+    }
+    &_title
+    {
+     display: flex;
+     justify-content: flex-start;
+     margin: 5px;
+    }
+    &_p{
+      font-size: $size-txt-btn;
+      display: flex;
+      position: relative;
+      margin-left: 5px;
+      text-align:left;
+
+          .euros{
+           font-weight: bold;
+           position:absolute;
+           right:6%;
+           transition:transform 500ms;
+           transform: translatex(0);
+          }
+          .ellipsis_p
+         {
+           display:block; 
+           width: 80%;
+           overflow:hidden;
+           white-space:nowrap;
+           text-overflow:ellipsis;
+         } 
+         
+         }
+
+    &_box{
+      position:absolute;
+      top:0;
+      right:0;
+      width:60px;
+      height:67px;
+      background-color:$color-mint;
+      border-radius:0 $border-rad-m $border-rad-m 0;
+      transition:transform 500ms;
+      transform-origin:100% 50%;
+      transform:scalex(0);
+      opacity: 0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+        .check{
+       width:20px;
+       height:20px;
+       border-radius:10px;
+       background-color:white;
+       color:#99E2D0;
+       font-size:15px;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       transition:transform 500ms;
+       transform:rotate(0);
+     }
+     }
+
+  a:active >.menu_btn_box
+     {
+       transform:scalex(1);
+       opacity: 1;
+        .check{
+              transform:rotate(360deg);
+             }
+     }
+  a:active >.menu_btn_p 
+     {
+      .euros{
+      transform:translateX(-55px);}
+      .ellipsis_p{
+      
+      width:60%;
+      }
+     }
+     
+  a:active >.ellipsis_h3
+     {
+      width:60%;
+     }
+
+     }
+  
+
+
+
+   .btn-center{
+        display:flex;
+        justify-content: center;
+        margin-bottom: -35px;
+        }     
+
+  
+
+
+
+
+
+
+  

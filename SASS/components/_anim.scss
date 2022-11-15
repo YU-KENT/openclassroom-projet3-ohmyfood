@@ -1,0 +1,97 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index:-1;
+    background-color: $color-greyclair;
+    animation: bg 2.4s;
+  }
+    .loader-ring {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 17px solid #fff;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    opacity: 0;
+    animation: lds-ring 1.3s cubic-bezier(0.5, 0, 0.5, 1) ;
+    animation-iteration-count: 2;
+  }
+
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+      opacity:1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity:1;
+    }
+  }
+ 
+  @keyframes bg {
+    0%{
+      opacity: 1;
+      z-index:1;
+    }
+    100%{
+      opacity: 1;
+      z-index:1;
+    }
+  }
+
+
+  .heart
+  {
+  &_regular
+      {@include heart;
+       color:grey;
+       z-index:1;
+       background-color:white;
+      }
+  &_solid{
+        @include heart;
+        transform-origin: (0% bottom);
+         color:$color-primary;
+         transform: scaley(0);
+         transition:transform 500ms cubic-bezier(0.5, 0, 0.5, 1);
+         
+    }}
+
+    .heart:active > .heart_regular{ 
+        z-index:-1;
+                    }
+
+    .heart_regular:active + .heart_solid{
+      transform:scaley(1);
+  }
+  
+ 
+
+ 
+ .menu_btn{
+    animation:apper $anim-dur both ease-in-out;
+    transform-origin: 50% 0;}
+  
+    @for $i from 1 through 10{
+      .menu_btn--#{$i} {
+        animation-delay:$anim-delay* $i ;
+      }
+    }
+  
+    @keyframes apper  {
+    0% {transform:scaley(0);
+        opacity: 0;
+    }
+  
+   100% {transform:scaley(1);
+        opacity:1;
+   } 
+  }

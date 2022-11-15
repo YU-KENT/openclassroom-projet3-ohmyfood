@@ -1,0 +1,32 @@
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: $color-footer;
+    width:100%;
+    color:white;
+    P{
+        font-family: 'shrikhandregular';
+        font-size: $size-title;
+        margin-left:40px;
+    }
+
+    ul {
+        flex-direction: column;
+        list-style-type: none;
+        margin:0 0 25px 0;
+        font-size: 14px;
+        li{
+            margin-bottom: 4px;
+        }
+    
+        a{
+            text-decoration: none;
+            color:white;
+            i{
+                margin-right: 8px;
+                font-size: 12px;
+            } 
+          }
+         }
+    }
