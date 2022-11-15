@@ -114,13 +114,15 @@ body {
 .menu_btn_title {
   display: flex;
   justify-content: flex-start;
-  margin: 5px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+  font-weight: bold;
 }
 .menu_btn_p {
   font-size: 13px;
   display: flex;
   position: relative;
-  margin-left: 5px;
+  margin-left: 10px;
   text-align: left;
 }
 .menu_btn_p .euros {
@@ -330,9 +332,10 @@ body {
 .menu-card_title {
   padding-top: 1px;
 }
-.menu-card_title span {
+.menu-card_title h1 {
   font-family: "shrikhandregular";
   font-size: 22px;
+  font-weight: 100;
   margin: 20px;
   display: block;
 }
