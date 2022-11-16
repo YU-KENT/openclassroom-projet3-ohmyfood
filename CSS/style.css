@@ -665,10 +665,9 @@ footer ul a i {
     margin-top: -7px;
   }
   .heart:hover > .heart_regular {
-    opacity: 0;
     z-index: -1;
   }
-  .heart:hover > .heart_solid {
+  .heart_regular:hover + .heart_solid {
     transform: scaley(1);
   }
   /*page 1-4*/
