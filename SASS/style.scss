@@ -317,12 +317,9 @@ justify-content: center;
         }
       }
 
-      .heart
-      {
-       &:hover > &_regular{
-          opacity:0;
-          z-index:-1; 
-      }
+      .heart:hover > .heart_regular{ 
+        z-index:-1;
+                    }
 
        &:hover > &_solid {
         transform:scaley(1);
