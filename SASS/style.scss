@@ -318,12 +318,12 @@ justify-content: center;
       }
 
       .heart:hover > .heart_regular{ 
-        z-index:-1;
-                    }
+        z-index:-1; }
+                   
 
-       &:hover > &_solid {
+       .heart:hover > .heart_solid {
         transform:scaley(1);
-    }}
+                        }
 
 /*page 1-4*/  
       .arrow{     
@@ -371,7 +371,7 @@ justify-content: center;
         {
          width:60%;
         }
-
+}
   
     
 
