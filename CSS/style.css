@@ -1,9 +1,9 @@
-/* Error: unmatched "}".
+/* Error: Top-level selectors may not contain the parent selector "&".
  *     ,
- * 374 | }
- *     | ^
+ * 324 |        &:hover > &_solid {
+ *     |        ^^^^^^^^^^^^^^^^^^
  *     '
- *   sass\style.scss 374:1  root stylesheet */
+ *   sass\style.scss 324:8  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a     \2577 \a 374 \2502  }\d\a     \2502  ^\a     \2575 \a   sass\\style.scss 374:1  root stylesheet';
+  content: 'Error: Top-level selectors may not contain the parent selector "&".\a     \2577 \a 324 \2502         &:hover > &_solid {\d\a     \2502         ^^^^^^^^^^^^^^^^^^\a     \2575 \a   sass\\style.scss 324:8  root stylesheet';
 }
