@@ -487,7 +487,9 @@ justify-content: center;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        justify-content: space-around;
         background-color: $color-greyclair;
+        padding-bottom: 5%;
           h2{
             width:100%;
             margin-left: 3%;
@@ -498,9 +500,9 @@ justify-content: center;
 
     .card-res{
       width:44%;
-      margin:3%;
-      height:270px;
-      margin-bottom: 5%;
+      margin:2%;
+      height:265px;
+      
       border-radius: $border-rad-s;
       overflow: hidden;
       background-color: white;

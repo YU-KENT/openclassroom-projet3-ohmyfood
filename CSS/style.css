@@ -820,7 +820,9 @@ footer ul a i {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: space-around;
     background-color: rgb(244, 244, 244);
+    padding-bottom: 5%;
   }
   .restaurants h2 {
     width: 100%;
@@ -830,9 +832,8 @@ footer ul a i {
   }
   .card-res {
     width: 44%;
-    margin: 3%;
-    height: 270px;
-    margin-bottom: 5%;
+    margin: 2%;
+    height: 265px;
     border-radius: 1rem;
     overflow: hidden;
     background-color: white;
