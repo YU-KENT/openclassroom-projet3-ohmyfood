@@ -548,6 +548,12 @@ footer ul a i {
     width: 100%;
     margin: 0 auto;
   }
+  h1, h2 {
+    font-size: 18px;
+  }
+  p, h3 {
+    font-size: 15px;
+  }
   .head {
     height: 110px;
     display: flex;
@@ -738,6 +744,12 @@ footer ul a i {
   body {
     width: 1024px;
     margin: 0 auto;
+  }
+  h1, h2 {
+    font-size: 18px;
+  }
+  p, h3 {
+    font-size: 15px;
   }
   .head {
     width: 100%;
