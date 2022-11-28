@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     position:fixed;
+    overflow-y: hidden;
     top:0;
     left:0;
     width: 100vw;
@@ -11,6 +12,8 @@
     z-index:-1;
     background-color: $color-greyclair;
     animation: bg 2.4s;
+
+
   }
     .loader-ring {
     

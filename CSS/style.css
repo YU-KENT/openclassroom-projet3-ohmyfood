@@ -198,6 +198,7 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
+  overflow-y: hidden;
   top: 0;
   left: 0;
   width: 100vw;
@@ -388,6 +389,10 @@ footer ul a {
 footer ul a i {
   margin-right: 8px;
   font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (max-width: 599.98px) {
