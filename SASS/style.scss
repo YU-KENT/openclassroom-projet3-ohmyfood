@@ -205,6 +205,15 @@ justify-content: center;
   p,h3{ 
      font-size: $size-txt;
      }
+
+  footer{
+    p{
+      margin-left: 50px;
+    }
+    ul{
+      margin-left: 9px;
+    }
+        }
    
 .head
      {
@@ -425,6 +434,16 @@ justify-content: center;
   p,h3{ 
      font-size: $size-txt;
      }
+
+  footer{
+      p{
+        margin-left: 35px;
+      }
+      ul{
+        margin-left:-5px
+      }
+          }
+     
    
 .head
      {

@@ -559,6 +559,12 @@ footer ul a i {
   p, h3 {
     font-size: 15px;
   }
+  footer p {
+    margin-left: 50px;
+  }
+  footer ul {
+    margin-left: 9px;
+  }
   .head {
     height: 110px;
     display: flex;
@@ -755,6 +761,12 @@ footer ul a i {
   }
   p, h3 {
     font-size: 15px;
+  }
+  footer p {
+    margin-left: 35px;
+  }
+  footer ul {
+    margin-left: -5px;
   }
   .head {
     width: 100%;
